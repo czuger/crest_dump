@@ -18,7 +18,7 @@ database = db_config[ ARGV[1] ][ 'database' ]
 pg_config = {}
 pg_config[ :user ] = db_config[ ARGV[1] ][ 'username' ] if db_config[ ARGV[1] ][ 'username' ]
 pg_config[ :password ] = db_config[ ARGV[1] ][ 'password' ] if db_config[ ARGV[1] ][ 'password' ]
-pg_config[ :host ] = :localhost
+pg_config[ :search_path  ] = db_config[ ARGV[1] ][ 'search_path' ] if db_config[ ARGV[1] ][ 'search_path' ]
 
 DB = Sequel.postgres( database, pg_config )
 
