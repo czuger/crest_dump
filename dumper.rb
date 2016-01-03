@@ -18,7 +18,9 @@ database = db_config[ ARGV[1] ][ 'database' ]
 pg_config = {}
 pg_config[ :user ] = db_config[ ARGV[1] ][ 'username' ] if db_config[ ARGV[1] ][ 'username' ]
 pg_config[ :password ] = db_config[ ARGV[1] ][ 'password' ] if db_config[ ARGV[1] ][ 'password' ]
-pg_config[ :search_path  ] = db_config[ ARGV[1] ][ 'search_path' ] if db_config[ ARGV[1] ][ 'search_path' ]
+pg_config[ :search_path ] = db_config[ ARGV[1] ][ 'schema_search_path' ] if db_config[ ARGV[1] ][ 'schema_search_path' ]
+
+pp pg_config
 
 DB = Sequel.postgres( database, pg_config )
 
