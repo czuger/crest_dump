@@ -43,11 +43,11 @@ end
 `echo \`md5sum #{dump_path}.gz | awk '{ print $1 }'\` > #{dump_path}.md5`
 
 # Changing symlinks
-File.unlink( 'www/crest_dump.csv.gz' ) if File.exist?( 'www/crest_dump.csv.gz' )
-File.unlink( 'www/crest_dump.csv.gz.md5' ) if File.exist?( 'www/crest_dump.csv.gz.md5' )
+File.unlink( 'public-dump/crest_dump.csv.gz' ) if File.exist?( 'public-dump/crest_dump.csv.gz' )
+File.unlink( 'public-dump/crest_dump.csv.gz.md5' ) if File.exist?( 'public-dump/crest_dump.csv.gz.md5' )
 
-File.symlink( "../#{dump_path}.gz", 'www/crest_dump.csv.gz' )
-File.symlink( "../#{dump_path}.md5", 'www/crest_dump.csv.gz.md5' )
+File.symlink( "../#{dump_path}.gz", 'public-dump/crest_dump.csv.gz' )
+File.symlink( "../#{dump_path}.md5", 'public-dump/crest_dump.csv.gz.md5' )
 
 # Removing old files
 Dir.chdir( 'dumps' )
