@@ -35,7 +35,6 @@ File.open( dump_path, 'w' ) do |file|
     array = fields.map{ |e| row[ e ] }
     file.puts( array.join( ';' ) )
     pl.p( nb_lines_trigger: 100000 )
-    break
   end
 end
 
