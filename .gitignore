@@ -38,3 +38,5 @@ build/
 .idea
 
 *.gz
+*.md5
+*.csv
