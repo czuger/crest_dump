@@ -23,7 +23,7 @@ Once unzipped, each line is in the following format :
 <region_code>;<type_code>;<history_date>;<order_count;<volume>;<low_price>;<avg_price>;<high_price>
 ```
 
-Whith : 
+With : 
 
 * region_code : The CPP region code ( see https://public-crest.eveonline.com/regions/<region_code>/ or https://public-crest.eveonline.com/regions/ )
 * type_code : The CPP type (item) code ( see https://public-crest.eveonline.com/types/<type_code>/ or https://public-crest.eveonline.com/types/ )
