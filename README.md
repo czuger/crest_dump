@@ -11,7 +11,7 @@ More information at : https://wiki.eveonline.com/en/wiki/CREST_Getting_Started.
 ## How to 
 
 1. Get the last version of the file on : http://evebs.net/public-dump/crest_dump.csv.gz
-1. Unzip it and what you want with the data.
+1. Unzip it and use data.
 
 You can also check the zip by matching it's md5 signature against http://evebs.net/public-dump/crest_dump.csv.gz.md5
 
