@@ -6,7 +6,7 @@ This dump contain all crest history data for all regions and all items (when ava
 
 It is a compilation of https://public-crest.eveonline.com/market/{region_id}/types/{type_id}/history/ for all regions and all types into a csv file.
 
-More information at : https://wiki.eveonline.com/en/wiki/CREST_Getting_Started for crest data.
+More information at : https://wiki.eveonline.com/en/wiki/CREST_Getting_Started.
 
 ## How to 
 
