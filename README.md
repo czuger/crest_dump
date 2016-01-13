@@ -1,15 +1,20 @@
 # Crest dump
 
-This dump contain all crest history data for all regions and all items (when available).
+## What ?
 
+This dump contain all crest history data for all regions and all items (when available). 
+
+It is a compilation of https://public-crest.eveonline.com/market/{region_id}/types/{type_id}/history/ for all regions and all types into a csv file.
 
 ## How to 
 
-To get the last version of the file, please go to : http://evebs.net/public-dump/
-
-Download the gz archive and check if the md5 sum correspond.
+* Get the last version of the file on : http://evebs.net/public-dump/
+* Download the gz archive and check if the md5 sum correspond.
+* Unzip it and what you want with the data.
 
 ## File format
+
+Each line gives you data in the following format : 
 
 ```
 <region_code>;<type_code>;<history_date>;<order_count;<volume>;<low_price>;<avg_price>;<high_price>
@@ -29,6 +34,8 @@ Where
 More information at : https://wiki.eveonline.com/en/wiki/CREST_Getting_Started for crest data.
 
 ## Data update frequency
+
+All data are not updated at the same frequency. Here is a list :
 
 * Regions updated daily : The Forge, Sinq Laison, Domain, Heimatar, Metropolis
 * Regions updated weekly : Black Rise, Curse, Devoid, Essence, Fountain, Genesis, Khanid, Kor-Azor, Lonetrek, Molden Heath, Placid, Providence
