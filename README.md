@@ -8,8 +8,8 @@ It is a compilation of https://public-crest.eveonline.com/market/{region_id}/typ
 
 ## How to 
 
-* Get the last version of the file on : http://evebs.net/public-dump/
-* Download the gz archive and check if the md5 sum correspond.
+* Get the last version of the file on : http://evebs.net/public-dump/crest_dump.csv.gz
+* You can check if the md5 correspond to http://evebs.net/public-dump/crest_dump.csv.gz.md5
 * Unzip it and what you want with the data.
 
 ## File format
@@ -20,7 +20,7 @@ Each line gives you data in the following format :
 <region_code>;<type_code>;<history_date>;<order_count;<volume>;<low_price>;<avg_price>;<high_price>
 ```
 
-Where
+Whith : 
 
 * region_code : The CPP region code ( get information about a single region at https://public-crest.eveonline.com/regions/<region_code>/ or get all regions at https://public-crest.eveonline.com/regions/ )
 * type_code : The CPP type (item) code ( get information about a single type at https://public-crest.eveonline.com/types/<type_code>/ or get all types at https://public-crest.eveonline.com/types/ )
