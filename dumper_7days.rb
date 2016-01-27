@@ -30,7 +30,7 @@ dump_time = Time.now
 dump_path = "dumps/crest_dump_7days_#{dump_time.to_i}.csv"
 File.open( dump_path, 'w' ) do |file|
   DB[ :regions ].join( :crest_price_histories, region_id: :id ).join( :eve_items, id: :eve_item_id )
-    .where( history_date > Time.now - ( 7 * 24 * 3600 ) )
+    .where( :history_date > Time.now - ( 7 * 24 * 3600 ) )
     use_cursor( hold: false ).select( *fields ).each do |row|
     row[ :history_date ] = row[ :history_date ].utc.to_i
     array = fields.map{ |e| row[ e ] }
