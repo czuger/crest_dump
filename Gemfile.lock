@@ -1,28 +1,26 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    activemodel (4.1.7)
-      activesupport (= 4.1.7)
-      builder (~> 3.1)
-    activerecord (4.1.7)
-      activemodel (= 4.1.7)
-      activesupport (= 4.1.7)
-      arel (~> 5.0.0)
-    activesupport (4.1.7)
-      i18n (~> 0.6, >= 0.6.9)
-      json (~> 1.7, >= 1.7.7)
+    activemodel (5.1.6)
+      activesupport (= 5.1.6)
+    activerecord (5.1.6)
+      activemodel (= 5.1.6)
+      activesupport (= 5.1.6)
+      arel (~> 8.0)
+    activesupport (5.1.6)
+      concurrent-ruby (~> 1.0, >= 1.0.2)
+      i18n (>= 0.7, < 2)
       minitest (~> 5.1)
-      thread_safe (~> 0.1)
       tzinfo (~> 1.1)
-    arel (5.0.1.20140414130214)
-    builder (3.2.2)
-    i18n (0.7.0)
-    json (1.8.3)
-    minitest (5.5.1)
-    pg (0.17.1)
-    sequel (4.29.0)
-    thread_safe (0.3.5)
-    tzinfo (1.2.2)
+    arel (8.0.0)
+    concurrent-ruby (1.0.5)
+    i18n (1.0.0)
+      concurrent-ruby (~> 1.0)
+    minitest (5.11.3)
+    pg (1.0.0)
+    sequel (5.7.0)
+    thread_safe (0.3.6)
+    tzinfo (1.2.5)
       thread_safe (~> 0.1)
 
 PLATFORMS
@@ -32,3 +30,6 @@ DEPENDENCIES
   activerecord
   pg
   sequel
+
+BUNDLED WITH
+   1.16.1
