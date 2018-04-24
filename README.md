@@ -1,5 +1,8 @@
 # Crest dump
 
+**This project is abandoned as it is no more useful. 
+Indeed https://esi.tech.ccp.is/ui/#/Market/get_markets_region_id_history just give you the same.**
+
 ## What ?
 
 This dump contain all crest history data for all regions and all items (when available). 
